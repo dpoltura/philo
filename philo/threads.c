@@ -6,7 +6,7 @@
 /*   By: dpoltura <dpoltura@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 16:22:02 by dpoltura          #+#    #+#             */
-/*   Updated: 2024/05/24 12:51:37 by dpoltura         ###   ########.fr       */
+/*   Updated: 2024/10/31 12:49:01 by dpoltura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 static void	*routine(void *params)
 {
 	t_philo	*philo;
-	int		i;
 
-	i = 0;
 	philo = params;
 	if (philo->id % 2 == 0)
 		ft_usleep(10);
