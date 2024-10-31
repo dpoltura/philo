@@ -70,5 +70,6 @@ int					ft_usleep(size_t milliseconds);
 int					is_eating(t_philo *philo);
 int					is_sleeping(t_philo *philo);
 int					is_thinking(t_philo *philo);
+int					check_value_meal(t_philo *philo);
 
 #endif

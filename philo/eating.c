@@ -57,18 +57,6 @@ static void	print_eating(t_philo *philo)
 	}
 }
 
-int	check_value_meal(t_philo *philo)
-{
-	pthread_mutex_lock(philo->meal_lock);
-	if (*philo->meal == 1)
-	{
-		pthread_mutex_unlock(philo->meal_lock);
-		return (1);
-	}
-	pthread_mutex_unlock(philo->meal_lock);
-	return (0);
-}
-
 static void	choose_fork(t_philo *philo, pthread_mutex_t **first_fork,
 		pthread_mutex_t **second_fork)
 {

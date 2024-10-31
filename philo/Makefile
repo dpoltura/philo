@@ -18,7 +18,8 @@ SRCS =	main.c \
 		eating.c \
 		parse.c \
 		utils.c \
-		threads.c
+		threads.c \
+		check.c
 
 OBJS = $(SRCS:%.c=%.o)
 
