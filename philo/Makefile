@@ -6,11 +6,13 @@
 #    By: dpoltura <dpoltura@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/21 17:44:47 by kprigent          #+#    #+#              #
-#    Updated: 2024/05/24 12:51:46 by dpoltura         ###   ########.fr        #
+#    Updated: 2024/10/31 12:41:43 by dpoltura         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = philo
+CC = cc
+
+CFLAGS = -Wall -Wextra -Werror
 
 SRCS =	main.c \
 		death.c \
@@ -23,9 +25,9 @@ SRCS =	main.c \
 
 OBJS = $(SRCS:%.c=%.o)
 
-INCLUDE = -pthread 
-
 NAME = philo
+
+INCLUDE = -pthread
 
 all: $(NAME)
 
